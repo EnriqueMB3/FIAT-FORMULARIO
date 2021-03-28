@@ -13,8 +13,6 @@ export const CardForm = () => {
                                 <label  >MODELO</label>
                                 <select >
                                     <option>SELECCIONA</option>
-                                    <option>La segunda opción</option>
-                                    <option>La tercera opción</option>
                                 </select>
                         </div>
                     </div>
@@ -96,7 +94,7 @@ export const CardForm = () => {
                             <label >DESEO SER CONTACTADO POR</label>
                             <div className="__card_form_radios">
                                 <div className="__form_radio">
-                                    <input type="radio" checked id="telefono" name="contacto" />
+                                    <input type="radio"  id="telefono" name="contacto" />
                                     <label htmlFor="telefono" >
                                         <i class="fas fa-phone-alt"></i>
                                         <span>TELÉFONO  </span>
@@ -143,7 +141,7 @@ export const CardForm = () => {
                                 </div>
 
                                 <div className="__form_radio"  >
-                                    <input checked type="radio" id="credit" name="pay" />
+                                    <input  type="radio" id="credit" name="pay"  />
                                     <label htmlFor="credit"  >
                                         <span>CRÉDITO</span>
                                     </label>
