@@ -1,0 +1,97 @@
+.__title_content {
+    text-align: center;
+    margin: auto;
+    h6 {
+        letter-spacing: 4px;
+        font-family: "Lato";
+        font-style: normal;
+        font-size: 8px;
+        color: white;
+    }
+    h3 {
+        color: white;
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-size: 5rem;
+        letter-spacing: 2px;
+    }
+}
+
+.__title_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 34rem;
+}
+
+.__title_subtitle_separation {
+    display: flex;
+    margin: auto 5rem;
+    justify-content: center;
+    hr {
+        flex: 1 1 auto;
+        border: 0;
+        margin: auto .6rem;
+        height: 1px;
+        background-color: black
+    }
+    h5::before {
+        font-size: 8pt;
+        align-self: center;
+        letter-spacing: 2px;
+        content: "CITADINO, AVENTURERO, DEPORTIVO";
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .__title_box {
+        max-width: 36rem;
+    }
+    .__title_content {
+        h6 {
+            font-size: 6pt;
+        }
+        h3 {
+            color: white;
+            font-size: 4rem;
+        }
+    }
+    .__title_subtitle_separation {
+        margin: auto 6rem;
+        hr {
+            flex: 1 1 auto;
+            border: 0;
+            margin: auto .8rem;
+            height: 1px;
+            background-color: black
+        }
+        h5::before {
+            content: "ELIGE EL FIAT QUE VA CONTIGO";
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .__title_subtitle_separation {
+        margin: auto 0rem;
+        hr {
+            display: none;
+            // align-self: center;
+            // border: .5px solid black;
+        }
+        h5::before {
+            flex: 1 1 auto;
+            margin: auto .5rem;
+            content: "CITADINO, AVENTURERO, DEPORTIVO";
+        }
+    }
+    .__title_content {
+        h3 {
+            color: white;
+            font-family: "Playfair Display";
+            font-style: italic;
+            font-size: 30pt;
+        }
+    }
+}

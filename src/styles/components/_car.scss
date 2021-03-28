@@ -1,0 +1,31 @@
+.__car_content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    // margin: 0 14rem;
+}
+
+.__car_carimg {
+    width: 375px;
+    margin-top: -50px;
+    text-align: center;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 768px) {
+    .__car_carimg {
+        width: 375px;
+        object-fit: cover;
+        margin-top: -48px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .__car_carimg {
+        width: 270px;
+        object-fit: cover;
+        margin-top: -25px;
+    }
+}

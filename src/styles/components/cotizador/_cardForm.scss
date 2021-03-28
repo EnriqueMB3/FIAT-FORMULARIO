@@ -1,0 +1,192 @@
+    .__card_content_form {
+        margin: -6rem 11rem 4rem 11rem;
+        padding: 5rem 2rem;
+        background-color: white;
+    }
+    
+    .__form_middle {
+        margin: 0 2rem;
+    }
+    
+    .__form_middle_separation {
+        margin: 0 1.8rem;
+    }
+    
+    .container__row {
+        row-gap: 2rem;
+    }
+    
+    .end-button {
+        align-self: flex-end;
+        text-align: end;
+        button {
+            font-size: 9px;
+            color: lighten($color: #000000, $amount: 20);
+            padding: 10px 35px 10px 35px;
+            background: white;
+            border: 1px solid $primary;
+            font-size: .6rem;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+        button:hover {
+            background: $primary;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    
+    .__card_form_radios {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .__form_radio input:checked~.checkmark:after {
+        display: block;
+    }
+    
+    .__form_radio {
+        text-align: center;
+        display: flex;
+        width: 100%;
+        label {
+            flex: 1 1 auto;
+            border: 1px solid $primary;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Lato';
+            justify-content: space-evenly;
+            font-size: .6rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            padding: 8px 10px 8px 5px;
+            align-items: center;
+            vertical-align: middle;
+        }
+        [type=radio] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        input {
+            &:checked+label {
+                background: $primary;
+                color: white;
+            }
+        }
+    }
+    
+    [type=radio]:checked+label {
+        background: $secondary;
+    }
+    
+    .__card_form_footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .__form_footer_item {
+        flex: 1 1 auto;
+    }
+    
+    .__form_footer_item {
+        margin: auto .5rem;
+    }
+    
+    .__card_form_control {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lato';
+        margin: auto .8rem;
+        >label {
+            color: lighten($color: #000000, $amount: 60);
+            font-size: 10px;
+            letter-spacing: 2px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+        input[type=text],
+        input[type=number],
+        textarea {
+            font-size: 9px;
+            color: lighten($color: #000000, $amount: 20);
+            padding: 8px 10px 8px 5px;
+            font-weight: 900;
+            border-radius: 0;
+            border: 1px solid $primary;
+            outline: none;
+            letter-spacing: 1.5px;
+        }
+        select {
+            font-size: 9px;
+            color: lighten($color: #000000, $amount: 20);
+            padding: 7px 10px 7px 5px;
+            font-weight: 900;
+            border-radius: 0;
+            border: 1px solid $primary;
+            outline: none;
+            letter-spacing: 1.5px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .__card_content_form {
+            margin: -3.2rem .5rem 5rem .5rem;
+            padding: 4rem 3rem;
+            background-color: white;
+        }
+        .__card_form_control {
+            display: flex;
+            flex-direction: column;
+        }
+        .__form_middle {
+            margin: 0 .6rem;
+        }
+        .__form_middle_pay {
+            margin: 0 .6rem;
+        }
+        .__form_middle_separation {
+            margin: 0 1.2rem;
+        }
+    }
+    
+    @media screen and (max-width: 414px) {
+        .__card_content_form {
+            margin: -3.8rem 0rem 4rem 0rem;
+            padding: 3.5rem .8rem;
+            background-color: white;
+        }
+        .__form_middle_pay {
+            margin: 0;
+        }
+        .container__row {
+            display: block;
+        }
+        .__card_form_control {
+            margin: 1rem 0;
+            select,
+            input[type=text],
+            input[type=number] {
+                padding: 10px 10px 10px 5px;
+            }
+        }
+        .__form_radio {
+            label {
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+        .__form_middle {
+            margin: 0;
+        }
+        .__form_middle_separation {
+            margin: 0;
+        }
+        .end-button {
+            margin-top: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+    }

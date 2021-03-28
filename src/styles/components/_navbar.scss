@@ -1,0 +1,109 @@
+nav {
+    top: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 12px;
+    background-color: white;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        z-index: 1;
+        margin: 0 12rem 0rem 14rem;
+        li {
+            // border: 1px solid red;
+            cursor: pointer;
+            display: inline;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 6pt;
+            // align-self: flex-end;
+            text-align: end;
+            color: black;
+            flex: 1 1 auto;
+            a {
+                color: black;
+                font-variant: small-caps;
+                text-decoration: none;
+            }
+            i {
+                color: $primary;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.__navbar_logo {
+    position: absolute;
+    margin: 0 0 0 10rem;
+    top: -8px;
+}
+
+
+/*iPad pro*/
+
+@media screen and (max-width: 768px) {
+    .__navbar_logo {
+        margin: 0 0 0 -1rem;
+    }
+    nav {
+        ul {
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            z-index: 1;
+            margin: 0 1rem;
+            li {
+                // border: 1px solid red;
+                cursor: pointer;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 1000;
+                font-size: 9px;
+                text-align: center;
+                color: black;
+                i {
+                    color: $primary;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .__navbar_item_not {
+        display: none;
+    }
+    .__navbar_sidebar_toggle {
+        flex: 0 0 auto;
+    }
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 414px) {
+    nav {
+        ul {
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            z-index: 1;
+            margin: 0rem;
+            li {
+                cursor: pointer;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 1000;
+                font-size: 8px;
+                color: black;
+                a {
+                    display: none;
+                }
+                i {
+                    color: $primary;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
