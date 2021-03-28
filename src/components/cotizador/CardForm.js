@@ -21,6 +21,10 @@ export const CardForm = () => {
                             <label >VERSIÓN</label>
                             <select>
                                 <option>SELECCIONA</option>
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+
                             </select>
                         </div>
                     </div>
@@ -30,6 +34,9 @@ export const CardForm = () => {
                         <label >ESTADO</label>
                         <select>
                             <option>SELECCIONA</option>
+                            <option>COAHUILA</option>
+                            <option>CHIHUAHUA</option>
+                            <option>OAXACA</option>
                         </select>
                         </div>
                     </div>
